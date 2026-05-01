@@ -1,0 +1,54 @@
+/* styles/classes.css */
+.class-selection {
+    text-align: center;
+    padding: 2rem;
+}
+
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.class-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.class-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.class-card h3 {
+    color: white;
+    font-family: 'MedievalSharp', cursive;
+}
+
+/* Cores específicas para cada classe */
+.warrior { background: rgba(139, 0, 0, 0.3); }
+.rogue { background: rgba(0, 100, 0, 0.3); }
+.mage { background: rgba(0, 0, 139, 0.3); }
+.cleric { background: rgba(218, 165, 32, 0.3); }
+
+.warrior:hover { background: rgba(139, 0, 0, 0.6); }
+.rogue:hover { background: rgba(0, 100, 0, 0.6); }
+.mage:hover { background: rgba(0, 0, 139, 0.6); }
+.cleric:hover { background: rgba(218, 165, 32, 0.6); }
+
+@media (max-width: 768px) {
+    .classes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .classes-grid {
+        grid-template-columns: 1fr;
+    }
+}

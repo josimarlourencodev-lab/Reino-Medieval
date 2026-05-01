@@ -1,0 +1,39 @@
+<!-- mago/mago.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mago Medieval</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="mago.css">
+</head>
+<body class="mage-theme">
+    <main class="character-sheet">
+        <h1 class="character-title">Mago</h1>
+        
+        <section class="character-content">
+            <div class="character-image">
+                <img src="../images/mago.png" alt="Mago" width="500" height="600">
+            </div>
+            
+            <div class="character-info">
+                <h2>Atributos</h2>
+                <div class="stats-container"></div>
+                
+                <h2>Habilidades</h2>
+                <ul class="skills-container"></ul>
+            </div>
+        </section>
+        
+        <button class="nav-button" onclick="window.location.href='../escolha.html'">Voltar</button>
+    </main>
+
+    <script type="module">
+        import { Mage } from './mago.js';
+        
+        const mage = new Mage();
+        mage.renderStats(document.querySelector('.stats-container'));
+        mage.renderSkills(document.querySelector('.skills-container'));
+    </script>
+</body>
+</html>
