@@ -1,0 +1,26 @@
+/* ladino/ladino.css */
+.rogue-theme {
+    background: #182818 url('../images/Fundo.jpg');
+    color: #0c0;
+}
+
+.character-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.rogue-theme .character-title {
+    text-shadow: 2px 2px 4px rgba(0, 200, 0, 0.5);
+}
+
+.rogue-theme .nav-button {
+    background: linear-gradient(to bottom, #367a36, #204a20);
+    border: 2px solid #0c0;
+}
+
+.rogue-theme .skill {
+    background: rgba(0, 200, 0, 0.1);
+    border-left: 4px solid #0c0;
+}

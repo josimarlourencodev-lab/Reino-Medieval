@@ -1,0 +1,103 @@
+body {
+background-image: url('../images/Fundo.jpg');
+
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #d4af37;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4rem;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.main-menu {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border: 3px solid #654321;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #2c1810, #1a0f0b);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.menu-button.knight:hover {
+    background: linear-gradient(to bottom, #4a2020, #2c1810);
+}
+
+.menu-button.scroll:hover {
+    background: linear-gradient(to bottom, #204a20, #182818);
+}
+
+.menu-button.door:hover {
+    background: linear-gradient(to bottom, #4a4a20, #2c2c18);
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.label {
+    font-size: 1.8rem;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.decoration.left {
+    left: 0;
+    bottom: 0;
+    background-image: url('../images/decoration-left.png');
+}
+
+.decoration.right {
+    right: 0;
+    top: 0;
+    background-image: url('../images/decoration-right.png');
+    transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .menu-button {
+        padding: 1rem 2rem;
+    }
+    
+    .label {
+        font-size: 1.4rem;
+    }
+}

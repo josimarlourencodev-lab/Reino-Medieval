@@ -1,0 +1,39 @@
+<!-- ladino/ladino.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ladino Medieval</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="ladino.css">
+</head>
+<body class="rogue-theme">
+    <main class="character-sheet">
+        <h1 class="character-title">Ladino</h1>
+        
+        <section class="character-content">
+            <div class="character-image">
+                <img src="../images/ladino.png" alt="Ladino" width="500" height="600">
+            </div>
+            
+            <div class="character-info">
+                <h2>Atributos</h2>
+                <div class="stats-container"></div>
+                
+                <h2>Habilidades</h2>
+                <ul class="skills-container"></ul>
+            </div>
+        </section>
+        
+        <button class="nav-button" onclick="window.location.href='../escolha.html'">Voltar</button>
+    </main>
+
+    <script type="module">
+        import { Rogue } from './ladino.js';
+        
+        const rogue = new Rogue();
+        rogue.renderStats(document.querySelector('.stats-container'));
+        rogue.renderSkills(document.querySelector('.skills-container'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* guerreiro/guerreiro.css */
+.warrior-theme {
+    background: #2c1810 url('../images/Fundo.jpg');
+    color: #c00;
+}
+
+.character-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.warrior-theme .character-title {
+    text-shadow: 2px 2px 4px rgba(200, 0, 0, 0.5);
+}
+
+.warrior-theme .nav-button {
+    background: linear-gradient(to bottom, #7a3636, #4a2020);
+    border: 2px solid #c00;
+}
+
+.warrior-theme .skill {
+    background: rgba(200, 0, 0, 0.1);
+    border-left: 4px solid #c00;
+}

@@ -1,0 +1,160 @@
+/* styles/common.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Variáveis CSS */
+:root {
+    /* Cores base */
+    --primary-dark: #1a0f0b;
+    --secondary-dark: #2c1810;
+    --gold: #d4af37;
+    --silver: #c0c0c0;
+    --parchment: #f0e6d2;
+
+    /* Cores das classes */
+    --warrior-red: #8b0000;
+    --rogue-green: #006400;
+    --mage-blue: #00008b;
+    --cleric-gold: #daa520;
+
+    /* Tipografia */
+    --font-title: 'MedievalSharp', cursive;
+    --font-text: 'Arial', sans-serif;
+}
+
+/* Importação de fonte */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* Estilos globais */
+body {
+    background-color: var(--primary-dark);
+    color: var(--parchment);
+    font-family: var(--font-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    background-image: url('../images/Fundo.jpg');
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Componentes comuns */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+    background: linear-gradient(to bottom, var(--secondary-dark), var(--primary-dark));
+    color: var(--gold);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, var(--primary-dark), var(--secondary-dark));
+}
+
+/* Layouts comuns */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cards de personagem */
+.character-card {
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid var(--silver);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+    border-color: var(--gold);
+}
+
+/* Barra de navegação */
+.navbar {
+    padding: 1rem;
+    background: var(--secondary-dark);
+    border-bottom: 3px solid var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav-button {
+    width: 150px;
+    height: 80px;
+    display: center;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border: 3px solid #654321;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #2c1810, #1a0f0b);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.sair {
+    display: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.creditos hidden {
+    justify-content: center;
+}

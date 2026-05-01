@@ -1,0 +1,26 @@
+/* clerigo/clerigo.css */
+.cleric-theme {
+    background: #2c2c18 url('../images/Fundo.jpg');
+    color: #cc0;
+}
+
+.character-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.cleric-theme .character-title {
+    text-shadow: 2px 2px 4px rgba(200, 200, 0, 0.5);
+}
+
+.cleric-theme .nav-button {
+    background: linear-gradient(to bottom, #7a7a36, #4a4a20);
+    border: 2px solid #cc0;
+}
+
+.cleric-theme .skill {
+    background: rgba(200, 200, 0, 0.1);
+    border-left: 4px solid #cc0;
+}

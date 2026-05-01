@@ -1,0 +1,26 @@
+/* mago/mago.css */
+.mage-theme {
+    background: #18182c url('../images/Fundo.jpg');
+    color: rgb(81, 81, 244);
+}
+
+.character-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.mage-theme .character-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 200, 0.5);
+}
+
+.mage-theme .nav-button {
+    background: linear-gradient(to bottom, #36367a, #20204a);
+    border: 2px solid #00c;
+}
+
+.mage-theme .skill {
+    background: rgba(0, 0, 200, 0.1);
+    border-left: 4px solid #00c;
+}
