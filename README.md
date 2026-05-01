@@ -73,3 +73,5 @@ Este trabalho teve como foco consolidar o aprendizado prático em desenvolviment
 
 ✅ Concluído (versão acadêmica)  
 🔧 Aberto para melhorias futuras
+
+⚠️ Atenção: Este projeto não receberá atualizações no momento, mas há planos futuros para implementação de um sistema de batalha, atualmente em estudo.
